@@ -20,12 +20,12 @@ env:
   WORKING_DIR: 'board-api'
   
   # azure env
-  AZURE_RG: ' naruaksrg
+  AZURE_RG: ' naruaksrg'
   ACR_NAME: 'naruacr'
   SECRET: 'secret-for-acr'
   AKS_CLUSTER: 'narucluster'
-  NAMESPACE: 'boardapi'
-  APP_NAME: 'board-api'
+  NAMESPACE: 'ingress-basic'
+  APP_NAME: 'api-board'
 
 jobs:
   build-and-push-to-acr:
