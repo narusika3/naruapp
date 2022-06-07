@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - DNS_DNS.koreacentral.cloudapp.azure.com
+    - naruakst.koreacentral.cloudapp.azure.com
     secretName: tls-secret
   rules:
-  - host: DNS_DNS.koreacentral.cloudapp.azure.com
+  - host: naruakst.koreacentral.cloudapp.azure.com
     http:
       paths:
       - path: /(.*)
