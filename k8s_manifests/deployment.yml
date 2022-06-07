@@ -1,0 +1,20 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "ghworkshop"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "ghworkshop"
+  template:
+    metadata:
+      labels:
+        app: "ghworkshop"
+    spec:
+      containers:
+        - name: "board-api"
+          image: "naruacr.azurecr.io/board-api"
+          ports:
+          - containerPort: 80
+
