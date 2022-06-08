@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: "api-board"
-          image: "naruacr.azurecr.io/board-api"
+          image: "naruacr.azurecr.io/board-api:latest"
           ports:
-          - containerPort: 80
+          - containerPort: 8090
 
