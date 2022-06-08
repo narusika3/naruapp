@@ -13,7 +13,7 @@ spec:
         app: "ghworkshop"
     spec:
       containers:
-        - name: "board-api"
+        - name: "api-board"
           image: "naruacr.azurecr.io/board-api"
           ports:
           - containerPort: 80
