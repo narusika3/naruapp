@@ -3,12 +3,11 @@ kind: Ingress
 metadata:
   name: ghworkshop-ingress
   annotations:
-    kubernetes.io/ingress.class: nginx
     cert-manager.io/cluster-issuer: letsencrypt-staging
     nginx.ingress.kubernetes.io/rewrite-target: /$1
     nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
-  ingressclassName: nginx
+  ingressClassName: nginx
   tls:
   - hosts:
     - naruakst.koreacentral.cloudapp.azure.com
